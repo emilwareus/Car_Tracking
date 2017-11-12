@@ -22,12 +22,9 @@ from Road_lanes import Lanes
 Lanes = Lanes()
 
 def process_img(image):
-    
     #Due to that openCV is used to read the image
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    
     #Undistort image
-    image = cv2.undistort(image, mtx, dist, None, mtx)
 
     #Run the threashold algorithms, this Consists of: 
     #dir_binary = Thresh.dir_threashold(image, sobel_kernel=sobel_kernel, thresh=dir_thresh)
@@ -76,7 +73,7 @@ def get_lane_image(image):
     return img_with_lines
 
 
-
+''' 
 mtx, dist = Distort.calibrate()
 for i in range(1,6):
    
@@ -102,3 +99,4 @@ if MakeMovie ==True:
     vid_clip.write_videofile(vid_output, audio=False)
     
     
+'''
