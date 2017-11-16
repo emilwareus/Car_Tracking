@@ -66,6 +66,8 @@ To optimize I only calculate the HOG-features once per image, and not for every 
 
 
 ![alt text][image4]
+
+![alt text][image7]
 ---
 
 ### Video Implementation
