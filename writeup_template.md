@@ -93,5 +93,5 @@ The heatmap used "from scipy.ndimage.measurements import label" to devide the he
 
 I had a lot of problems implementing this project. As the HOG features seemed not to be very stable to classify on. I have used Faster-RCNN's in other projects, which have turned out faster and more accurate. It is of course good to know these older technique, but I would like the option to implement something that is a bit more up to date.
 
-I could probably improve the performance b
+I could probably improve the performance by using more features or a different classifier. I was thinking of adding a nother layer of HOG-features with different pix_size and orient. This might help getting cars that are further away. 
 
