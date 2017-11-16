@@ -12,7 +12,6 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 [image1]: ./examples/car_not_car.png
 [image2]: ./output_images/feature_image.JPG
-[image3]: ./examples/sliding_windows.jpg
 [image4]: ./output_images/img_w_boxes.JPG
 [image6]: ./examples/labels_map.png
 [image7]: ./output_images/img_hot.JPG
@@ -59,8 +58,6 @@ I trained a linear SVM using a function from sklearn. This function is simple to
 
 In the function find_car under the Sliding_window header does the sliding window action. It is implemented with help from the exampel given at udacity. It consists of two for-loops that loops over the potential windows in x and y direction. 
 
-
-![alt text][image3]
 
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
