@@ -23,14 +23,14 @@ The goals / steps of this project are the following:
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
 ---
-###Writeup / README
+### Writeup / README
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf. 
+#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf. 
 You're reading it!
 
-###Histogram of Oriented Gradients (HOG)
+### Histogram of Oriented Gradients (HOG)
 
-####1. Explain how (and identify where in your code) you extracted HOG features from the training images.
+#### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
 The code for this headline is under the "Extract Features" header in the notebook Car_Tracking. To extract the HOG features I use the library and function "skimage.feature import hog". The relevant inputs are ' img, orientations, pixels_per_cell and cells_per_block. 
 
@@ -39,16 +39,16 @@ I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an 
 
 ![alt text][image1]
 
-I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `skimage.hog()` output looks like.
 
-Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
+#### 2. Explain how you settled on your final choice of HOG parameters.
+
+After exploring HOG features in different color spaces I decided to go for the YUV color space, as it seemed to do best in training. I kept iterating with orient, pixels_per_cell and cells_per_block as well and found that 9, 16 and 2 worked best for me. 
+
 
 
 ![alt text][image2]
 
-####2. Explain how you settled on your final choice of HOG parameters.
-
-I tried various combinations of parameters and...
+.
 
 ####3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
