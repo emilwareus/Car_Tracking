@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 [image4]: ./output_images/img_w_boxes.JPG
 [image6]: ./examples/labels_map.png
 [image7]: ./output_images/img_hot.JPG
-[video1]: ./project_video.mp4
+[video1]: ./project_video_proc_2.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
